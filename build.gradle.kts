@@ -37,18 +37,18 @@ val spi_version: String by project
 evaluationDependsOn(":mcp")
 
 repositories {
-    maven("https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1")
+    // repo here
 }
 
 dependencies {
     implementation("net.minecraftforge:forgespi:$spi_version")
     runtimeOnly("me.djtheredstoner:DevAuth-forge-latest:1.1.2")
 
-//    Use the shade to add the lib to the jar
-//    or use compile if you want to load the lib from the version.json
-//    from a maven repo
-//    shade "package-here"
-//    compile "package-here"
+    //    Use the shade to add the lib to the jar
+    //    or use compile if you want to load the lib from the version.json
+    //    from a maven repo
+    //    shade "package-here"
+    //    compile "package-here"
 }
 
 patcher {
